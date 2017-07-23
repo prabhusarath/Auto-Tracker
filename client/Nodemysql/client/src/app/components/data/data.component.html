@@ -1,0 +1,56 @@
+<div class="container">
+  <h2>Data Component !!</h2>
+  <p>Vehicles with Warnings are Listed:</p>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th> ReadingId</th>
+      <th>Vin</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>timestamp</th>
+      <th>fuelVolume</th>
+      <th>speed</th>
+      <th>engineHp</th>
+      <th>checkEngineLightOn</th>
+      <th>engineCoolantLow</th>
+      <th>cruiseControlOn</th>
+      <th>engineRpm</th>
+
+      <th>frontLeft</th>
+      <th>frontRight</th>
+      <th>rearLeft</th>
+      <th>rearRight </th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr *ngFor="let war of data">
+      <td>{{ war.ReadingId }}</td>
+      <td>{{ war.Vin }}</td>
+      <td>{{ war.latitude }}</td>
+      <td>{{ war.longitude }}</td>
+      <td>{{ war.timestamp }}</td>
+      <td>{{ war.fuelVolume }}</td>
+      <td>{{ war.speed }}</td>
+      <td>{{ war.engineHp }}</td>
+      <td>{{ war.checkEngineLightOn.toString() }}</td>
+      <td>{{ war.engineCoolantLow.toString() }}</td>
+      <td>{{ war.cruiseControlOn.toString() }}</td>
+      <td>{{ war.engineRpm }}</td>
+
+
+      <td>{{ war.frontLeft }}</td>
+      <td>{{ war.frontRight }}</td>
+      <td>{{ war.rearLeft }}</td>
+      <td>{{ war.rearRight }}</td>
+
+    </tr>
+    </tbody>
+
+  </table>
+
+</div>
