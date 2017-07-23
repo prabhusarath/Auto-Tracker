@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Warnings Component !!</h2>
+  <p>Vehicles with Warnings are Listed:</p>
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Warningid</th>
+          <th>Vin</th>
+          <th>ReadingId</th>
+          <th>alert</th>
+          <th>priority</th>
+        </tr>
+        </thead>
+
+          <tbody>
+
+            <tr *ngFor="let war of warndata">
+              <td>{{ war.Warningid }}</td>
+              <td>{{ war.Vin }}</td>
+              <td>{{ war.ReadingId }}</td>
+              <td>{{ war.alert }}</td>
+              <td>{{ war.priority }}</td>
+            </tr>
+
+          </tbody>
+
+      </table>
+
+</div>

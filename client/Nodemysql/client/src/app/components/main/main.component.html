@@ -1,0 +1,33 @@
+<div class="container">
+  <h2>Main Component!!</h2>
+  <p>Vehicles with Warnings are Listed:</p>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>vin</th>
+      <th>make</th>
+      <th>model</th>
+      <th>year</th>
+      <th>readlineRpm</th>
+      <th>maxFuelVolume</th>
+      <th>lastServiceDate</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let war of maindata">
+      <td>{{ war.vin }}</td>
+      <td>{{ war.make }}</td>
+      <td>{{ war.model }}</td>
+      <td>{{ war.year }}</td>
+      <td>{{ war.readlineRpm }}</td>
+      <td>{{ war.maxFuelVolume }}</td>
+      <td>{{ war.lastServiceDate }}</td>
+    </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
